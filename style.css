@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    text-align: center;
+}
+
+.arrow{
+    cursor: pointer;
+}
+
+/* Calendar */
+.Calendarrow {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rgb(99, 98, 98);
+    border-bottom: 1px solid #eee;
+}
+
+.Calendarcol {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.calendar .Calendarbody .Calendarcell{
+    height: 4.5em;
+    transition: 0.25s ease-out;
+}
+
+.calendar .Calendarbody .Calendarcell:first-child{
+    border-left: 1px solid #eee;
+}
+  
+.calendar .Calendarbody .Calendarcell .Calendarnumber {
+    font-size: 82.5%;
+    top: 0.75em;
+    right: 0.75em;
+}
+  
+.calendar .Calendarbody .Calendarcol {
+    flex-grow: 0;
+    flex-basis: calc(100% / 7);
+    width: calc(100% / 7);
+}
+
+
+/* End Calendar */
